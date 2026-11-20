@@ -1,0 +1,25 @@
+{
+	"schemaVersion": 1,
+	"id": "autopickaxe",
+	"version": "${version}",
+	"name": "Auto Pickaxe Swapper",
+	"description": "Automatically swaps in a replacement pickaxe (diamond first) when one breaks, and alerts a Discord webhook when you run out.",
+	"authors": ["You"],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["com.autopickaxe.AutoPickaxeClient"]
+	},
+	"mixins": [
+		{
+			"config": "autopickaxe.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.0",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "com.autopickaxe.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"KeyboardHandlerAccessor",
+		"MouseHandlerAccessor"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
